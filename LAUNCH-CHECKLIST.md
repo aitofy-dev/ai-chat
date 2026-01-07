@@ -242,8 +242,6 @@
 
 ---
 
-## 📅 Timeline
-
 | Date | Milestone |
 |------|-----------|
 | Today | Fix high priority items |
@@ -254,3 +252,26 @@
 | Week 4 | 500 downloads |
 | Month 2 | 100 stars |
 | Month 3 | 500 stars |
+
+---
+
+## 🗺️ Future Roadmap
+
+### v0.2.0 - CLI Tool
+- [ ] **Global CLI**: `npm install -g @aitofy/ai-chat`
+- [ ] Quick chat from terminal: `ai-chat "What is 2+2?" --model fast`
+- [ ] List models: `ai-chat models`
+- [ ] List aliases: `ai-chat aliases`
+- [ ] Check pricing: `ai-chat pricing gpt-4o`
+- [ ] Interactive mode: `ai-chat --interactive`
+
+### v0.3.0 - Enhanced Features
+- [ ] Response caching
+- [ ] Rate limit queue management
+- [ ] Conversation memory
+- [ ] Plugin system
+
+### v1.0.0 - Stable Release
+- [ ] Full documentation website
+- [ ] 100% test coverage
+- [ ] Stable API guarantee
