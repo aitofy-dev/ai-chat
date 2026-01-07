@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Extracted pricing data (regenerate with: npx tsx cli/extract-pricing.ts)
+extracted-pricing.json
+
+# HTML source files for pricing extraction (large files, download manually)
+examples/price/
+
+# Development files
+*.log
+.DS_Store
+
+# Test results (avoid re-running expensive API tests)
+.test-results.json
+
+# Cost tracking
+.ai-costs.json
+
+# Environment (contains API keys - never commit!)
+.env
