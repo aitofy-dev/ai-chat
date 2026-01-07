@@ -102,6 +102,24 @@ console.log(ai.resolveAlias('fast')); // 'gemini-2.5-flash'
 console.log(ai.aliases);               // All current aliases
 ```
 
+### Explore Models & Pricing
+
+```typescript
+const ai = new AI();
+
+// List all 90+ models
+console.log(ai.models());  // ['gpt-4o', 'claude-sonnet-4', ...]
+
+// List models for a provider
+console.log(ai.modelsFor('openai'));  // ['gpt-4o', 'gpt-5.2', 'o1', ...]
+
+// Get pricing for any model
+console.log(ai.pricing('gpt-4o'));  // { input: 2.5, output: 10, provider: 'openai' }
+
+// Get all aliases
+console.log(ai.aliases);  // { fast: 'gemini-2.5-flash-lite', best: 'claude-opus-4.5', ... }
+```
+
 ## 📖 API
 
 ### Fluent API
@@ -366,24 +384,6 @@ if (result.ok) {
 | **xAI** (10) | grok-4-*/3/3-mini, grok-code-fast-1, grok-2-vision |
 | **Groq** (10) | gpt-oss-*, llama-4-*, llama-3.3-70b, llama-3.1-8b, qwen3-32b, kimi-k2 |
 | **DeepSeek** (2) | deepseek-chat, deepseek-reasoner |
-
-### List Models Programmatically
-
-```typescript
-const ai = new AI();
-
-// List all models
-console.log(ai.models());  // ['gpt-4o', 'claude-sonnet-4', ...]
-
-// List models for a provider
-console.log(ai.modelsFor('openai'));  // ['gpt-4o', 'gpt-5.2', 'o1', ...]
-
-// Get current aliases
-console.log(ai.aliases);  // { fast: 'gemini-2.5-flash-lite', best: 'claude-opus-4.5', ... }
-
-// Get pricing for a model
-console.log(ai.pricing('gpt-4o'));  // { input: 2.5, output: 10, provider: 'openai', ... }
-```
 
 ## 💰 Built-in Pricing
 
